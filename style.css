@@ -1,70 +1,180 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #f3f4f6;
-  min-height: 100vh;
+  color: #1f2937;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.card {
+  padding: 20px 8%;
   background: #ffffff;
-  max-width: 420px;
-  width: 100%;
-  padding: 32px 24px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.avatar {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border: 4px solid #e5e7eb;
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-h1 {
-  font-size: 24px;
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
   color: #111827;
-  margin-bottom: 8px;
 }
 
-.subtitle {
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.greeting {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 1.15rem;
   color: #4f46e5;
   font-weight: 600;
-  font-size: 15px;
-  margin-bottom: 12px;
-}
-
-.desc {
-  color: #6b7280;
-  font-size: 14px;
-  line-height: 1.6;
   margin-bottom: 24px;
 }
 
-.btn {
+.avatar-container {
+  margin-bottom: 24px;
+}
+
+.hero-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
   display: inline-block;
   background-color: #111827;
   color: #ffffff;
-  padding: 10px 22px;
+  padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 14px;
   font-weight: 500;
-  transition: opacity 0.2s ease;
+  transition: background 0.2s;
 }
 
-.btn:hover {
-  opacity: 0.85;
+.btn-primary:hover {
+  background-color: #374151;
+}
+
+/* Generic Section Styles */
+.section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.section-divider {
+  width: 48px;
+  height: 3px;
+  background-color: #4f46e5;
+  margin: 0 auto 24px auto;
+  border-radius: 2px;
+}
+
+.about-text {
+  color: #4b5563;
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background: #f3f4f6;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+/* Footer / Contact */
+.footer-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-links a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
 }

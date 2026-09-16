@@ -3,22 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang Web Cá Nhân - Web Dev Tuần 1</title>
+  <title>Gia Phúc — Information Systems Student</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="card">
-    <img 
-      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=80" 
-      alt="Ảnh đại diện lập trình" 
-      class="avatar"
-    />
-    <h1>Xin chào! 👋</h1>
-    <p class="subtitle">Trang web tĩnh đầu tiên môn Phát triển Ứng dụng Web</p>
-    <p class="desc">
-      Trang web này được xây dựng bằng HTML/CSS đơn giản và tự động deploy qua Vercel.
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">GIA PHÚC</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <p class="greeting">Xin chào 👋</p>
+      <h1>Mình là Gia Phúc</h1>
+      <p class="role">Information Systems Student</p>
+      
+      <div class="avatar-container">
+        <img 
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80" 
+          alt="Hình của bạn" 
+          class="hero-img"
+        />
+      </div>
+
+      <a href="#about" class="btn-primary">About Me</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section about-section">
+    <h2>ABOUT ME</h2>
+    <div class="section-divider"></div>
+    <p class="about-text">
+      Xin chào! Mình là sinh viên ngành Hệ thống Thông tin. Mình đam mê tìm hiểu công nghệ, phát triển ứng dụng web và quản lý dữ liệu. Rất vui được kết nối và học hỏi cùng mọi người!
     </p>
-    <a href="https://github.com" target="_blank" rel="noreferrer" class="btn">Ghé thăm GitHub</a>
-  </main>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <h2>MY SKILLS</h2>
+    <div class="section-divider"></div>
+    <div class="skills-grid">
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">Git</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="footer-section">
+    <h3>CONTACT</h3>
+    <div class="contact-links">
+      <a href="mailto:gapu237@gmail.com">Email</a>
+      <span>|</span>
+      <a href="https://github.com/Gapu237" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+
 </body>
 </html>
