@@ -3,69 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Âu Gia Phúc — Information Systems Student</title>
+  <title>Âu Gia Phúc — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Header / Navigation -->
   <header class="navbar">
-    <div class="logo">GIA PHÚC</div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="nav-container">
+      <a href="#home" class="logo">Âu Gia Phúc<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">🌙</button>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
-    <div class="hero-content">
-      <p class="greeting">Xin chào 👋</p>
-      <h1>Mình là Âu Gia Phúc</h1>
-      <p class="role">Information Systems Student</p>
-      <p class="student-id">MSSV: 24521368</p>
-      
-      <div class="avatar-container">
-        <!-- Đặt tên file ảnh bạn vừa copy vào thư mục dự án -->
-        <img src="avt.jpg" alt="Ảnh đại diện Âu Gia Phúc" class="hero-img" />
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="badge">👋 Xin chào, mình là</span>
+        <h1 class="hero-title">Âu Gia Phúc</h1>
+        <p class="hero-subtitle">Sinh viên Hệ thống Thông tin — UIT</p>
+        <p class="hero-desc">
+          MSSV: <strong>24521368</strong>. Đam mê phát triển ứng dụng web, phân tích dữ liệu và thiết kế kiến trúc hệ thống thông tin.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Xem dự án</a>
+          <a href="#contact" class="btn btn-outline">Liên hệ ngay</a>
+        </div>
       </div>
-
-      <a href="#about" class="btn-primary">About Me</a>
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <img src="avt.jpg" alt="Ảnh đại diện Âu Gia Phúc" class="hero-avatar" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'" />
+      </div>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about" class="section about-section">
-    <h2>ABOUT ME</h2>
-    <div class="section-divider"></div>
-    <p class="about-text">
-    hi, mình là Gia Phúc, sinh viên IS của UIT
-    </p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GIỚI THIỆU</span>
+        <h2>Về bản thân</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Học vấn & Mục tiêu</h3>
+          <p>
+            Hiện là sinh viên chuyên ngành Hệ thống Thông tin tại Trường Đại học Công nghệ Thông tin (ĐHQG-HCM). 
+            Mình tập trung nghiên cứu quy trình phát triển phần mềm, cơ sở dữ liệu và các giải pháp chuyển đổi số cho doanh nghiệp.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>Định hướng phát triển</h3>
+          <p>
+            Mong muốn trau dồi sâu về kỹ thuật Full-stack Web, tối ưu hóa cơ sở dữ liệu quan hệ/NoSQL và ứng dụng các mô hình phân tích dữ liệu vào bài toán thực tiễn.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <h2>MY SKILLS</h2>
-    <div class="section-divider"></div>
-    <div class="skills-grid">
-      <div class="skill-item">HTML5 / CSS3</div>
-      <div class="skill-item">MySQL / SQL</div>
-      <div class="skill-item">Git & GitHub</div>
-      <div class="skill-item">Python</div>
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">NĂNG LỰC</span>
+        <h2>Kỹ năng công nghệ</h2>
+      </div>
+      <div class="skills-wrapper">
+        <div class="skill-category">
+          <h3>Web & Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3 / Flexbox</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Database & Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">Oracle SQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Công cụ & Quy trình</h3>
+          <div class="skill-tags">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">GitHub Desktop</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Vercel Deployment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DỰ ÁN</span>
+        <h2>Các bài tập & Dự án nổi bật</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-badge">Web Development</div>
+          <h3>Personal Static Portfolio</h3>
+          <p>Trang web giới thiệu cá nhân tĩnh được xây dựng với HTML5/CSS3 chuẩn Semantic, tối ưu responsive và tích hợp quy trình CI/CD tự động qua Vercel.</p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Vercel</span>
+            <span>Git</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Gapu237/myweb" target="_blank" rel="noreferrer">Source Code →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-badge">Database Design</div>
+          <h3>Database Management System</h3>
+          <p>Thiết kế lược đồ quan hệ, tối ưu truy vấn dữ liệu phức tạp và quản lý giao dịch với MySQL Workbench và Oracle Database.</p>
+          <div class="project-tech">
+            <span>MySQL</span>
+            <span>Oracle</span>
+            <span>Relational DB</span>
+          </div>
+          <div class="project-links">
+            <a href="#contact">Chi tiết trao đổi →</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-badge">Information Systems</div>
+          <h3>Enterprise System Analysis</h3>
+          <p>Phân tích luồng nghiệp vụ, lập mô hình BPMN và nghiên cứu ứng dụng giải pháp ERP/hệ thống quản trị trong thực tế.</p>
+          <div class="project-tech">
+            <span>Systems Analysis</span>
+            <span>BPMN</span>
+            <span>Data Flow</span>
+          </div>
+          <div class="project-links">
+            <a href="#contact">Chi tiết trao đổi →</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <footer id="contact" class="footer-section">
-    <h3>CONTACT</h3>
-    <div class="contact-links">
-      <a href="mailto:24521368@gm.uit.edu.vn">Email: 24521368@gm.uit.edu.vn</a>
-      <span>|</span>
-      <a href="https://github.com/Gapu237" target="_blank" rel="noreferrer">GitHub: Gapu237</a>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">KẾT NỐI</span>
+        <h2>Thông tin liên hệ</h2>
+        <p class="footer-desc">Đừng ngần ngại để lại lời nhắn hoặc kết nối với mình qua các kênh sau:</p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:24521368@gm.uit.edu.vn" class="contact-box">
+          <span class="contact-icon">📧</span>
+          <strong>Email trường</strong>
+          <span>24521368@gm.uit.edu.vn</span>
+        </a>
+        <a href="https://github.com/Gapu237" target="_blank" rel="noreferrer" class="contact-box">
+          <span class="contact-icon">💻</span>
+          <strong>GitHub Profile</strong>
+          <span>github.com/Gapu237</span>
+        </a>
+      </div>
+      <div class="copyright">
+        <p>© Âu Gia Phúc — UIT Student. Built with HTML, CSS & Vercel.</p>
+      </div>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
